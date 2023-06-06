@@ -1,0 +1,88 @@
+*{ padding: 0; margin: 0; box-sizing: border-box;}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(rgba(34, 24, 24, 0.6), rgba(34, 24, 24, 0.6)), url("images/fond.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* ---------------------------------
+         SECTION HEADER
+--------------------------------- */
+#header .titleH{ 
+    color: #cb0d0d; 
+    font-size: 30px; 
+    font-weight: 700; 
+    margin-top: 65px;
+}
+
+#header .titleB{
+    color: white; 
+    font-size: 76px; 
+    font-weight: 200;
+}
+
+#header nav{ 
+    background: rgb(78, 5, 5); 
+    padding: 25px;
+}
+
+#header nav a{ 
+    color: white; 
+    font-size: 18px; 
+    font-weight: 700;
+}
+
+#header nav a.active{ 
+    border: 1px solid white;
+}
+
+#header .fa-bars{ 
+    color: #fff; 
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+/* ---------------------------------
+         SECTION FOOTER
+--------------------------------- */
+#footer{ 
+    background: #311919; 
+    padding: 50px;
+}
+
+#footer p{ 
+    color: white; 
+    font-size: 18px; 
+    font-weight: 400;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    #header{ 
+        position: fixed; 
+        top: 0; 
+        z-index: 10; 
+        width: 100%;
+    }
+    #header .titleB{
+        display: none;
+    }
+    #header .titleH{
+        display: none;
+    }
+    
+    #header nav a.active{
+        border: none;
+    }
+    
+    
+}
